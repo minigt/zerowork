@@ -238,4 +238,5 @@ public class TodoServiceTest extends TodoApplicationTest {
             .isInstanceOf(TodoException.class)
             .hasMessageContaining(INVALID_TODO_ID.getReasonPhrase());
     }
+
 }
