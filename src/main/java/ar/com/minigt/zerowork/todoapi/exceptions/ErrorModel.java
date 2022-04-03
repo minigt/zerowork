@@ -15,6 +15,12 @@ public class ErrorModel {
         this.reason = ex.getReason();
     }
 
+    public ErrorModel(int code, int extendedCode, String message) {
+        this.code = code;
+        this.extendedCode = extendedCode;
+        this.reason = message;
+    }
+
     public Integer getCode() {
         return code;
     }
