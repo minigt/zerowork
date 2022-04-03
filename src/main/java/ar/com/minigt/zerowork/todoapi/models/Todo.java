@@ -1,6 +1,5 @@
 package ar.com.minigt.zerowork.todoapi.models;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -16,7 +15,6 @@ public class Todo {
 
     private String state;
 
-    @JsonProperty("user_id")
-    private String userId;
+    private String username;
 
 }

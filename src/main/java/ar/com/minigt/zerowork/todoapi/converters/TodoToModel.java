@@ -15,7 +15,7 @@ public class TodoToModel implements Converter<TodoDocument, Todo> {
         model.setTittle(source.getTittle());
         model.setDescription(source.getDescription());
         model.setState(source.getState());
-        model.setUserId(source.getUserId());
+        model.setUsername(source.getUsername());
         return model;
     }
 }

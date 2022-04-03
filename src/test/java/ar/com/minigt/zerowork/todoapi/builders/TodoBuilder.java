@@ -1,5 +1,6 @@
 package ar.com.minigt.zerowork.todoapi.builders;
 
+import ar.com.minigt.zerowork.todoapi.entities.TodoDocument;
 import ar.com.minigt.zerowork.todoapi.enums.State;
 import ar.com.minigt.zerowork.todoapi.models.Todo;
 import java.util.UUID;
@@ -15,7 +16,7 @@ public class TodoBuilder {
         builder.instance.setDescription("a description");
         builder.instance.setState(State.PENDING.name());
         builder.instance.setId(UUID.randomUUID().toString());
-        builder.instance.setUserId(UUID.randomUUID().toString());
+        builder.instance.setUsername("zerowork");
         return builder;
     }
 
@@ -28,8 +29,8 @@ public class TodoBuilder {
         return this;
     }
 
-    public TodoBuilder withUserId(String userId) {
-        instance.setUserId(userId);
+    public TodoBuilder withUsername(String username) {
+        instance.setUsername(username);
         return this;
     }
 
@@ -47,4 +48,5 @@ public class TodoBuilder {
         instance.setState(state);
         return this;
     }
+
 }
