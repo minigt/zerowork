@@ -7,7 +7,6 @@ import ar.com.minigt.zerowork.todoapi.entities.TodoDocument;
 import ar.com.minigt.zerowork.todoapi.enums.State;
 import ar.com.minigt.zerowork.todoapi.exceptions.TodoException;
 import ar.com.minigt.zerowork.todoapi.models.Todo;
-import ar.com.minigt.zerowork.todoapi.models.UserDetails;
 import ar.com.minigt.zerowork.todoapi.repositories.TodoRepository;
 import java.util.ArrayList;
 import java.util.List;
@@ -101,7 +100,7 @@ public class TodoService {
 
     public List<Todo> find() {
         List<TodoDocument> documents = todoRepository.findByUsername(userService.getCurrentUsername());
-        List todos = new ArrayList();
+        List<Todo> todos = new ArrayList();
         documents.forEach(document -> todos.add(conversionService.convert(document, Todo.class)));
         return todos;
     }
