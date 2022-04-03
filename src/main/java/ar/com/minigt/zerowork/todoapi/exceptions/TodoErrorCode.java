@@ -12,6 +12,11 @@ public enum TodoErrorCode {
     TODO_ID_CANT_BE_NULL(400, 4007, "Todo id can't be null"),
     TODO_NOT_FOUND(400, 4008, "Todo not found"),
     INVALID_TODO_ID(400, 4009, "Invalid todo id"),
+    TAG_NAME_NOT_NULL(400, 4010, "Name can't be null"),
+    TAG_NAME_NOT_EMPTY(400, 4011, "Name can't be empty"),
+    TAG_ID_CANT_BE_NULL(400, 4012, "Tag id can't be null"),
+    TAG_NOT_FOUND(400, 4013, "Tag not found"),
+    INVALID_TAG_ID(400, 4014, "Invalid tag id"),
 
     USERNAME_DOESNT_EXISTS(401, 4100, "Username doesn't exist"),
     USERNAME_ALREADY_EXISTS(401, 4101, "Username already exist"),
