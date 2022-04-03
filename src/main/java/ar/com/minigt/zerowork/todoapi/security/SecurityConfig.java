@@ -1,4 +1,4 @@
-package ar.com.minigt.zerowork.todoapi.configs;
+package ar.com.minigt.zerowork.todoapi.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
