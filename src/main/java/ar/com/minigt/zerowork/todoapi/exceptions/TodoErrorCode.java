@@ -17,6 +17,8 @@ public enum TodoErrorCode {
     TAG_ID_CANT_BE_NULL(400, 4012, "Tag id can't be null"),
     TAG_NOT_FOUND(400, 4013, "Tag not found"),
     INVALID_TAG_ID(400, 4014, "Invalid tag id"),
+    INVALID_TODO_TAG_ID(400, 4015, "Invalid todo-tag id"),
+    TODO_TAG_RELATIONSHIP_ALREADY_EXISTS(400, 4016, "todo-tag relationship already exists"),
 
     USERNAME_DOESNT_EXISTS(401, 4100, "Username doesn't exist"),
     USERNAME_ALREADY_EXISTS(401, 4101, "Username already exist"),
